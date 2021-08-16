@@ -161,10 +161,10 @@ function scoreboard(getInningScore,inning,number) {
     homescore = homescore + currentscore.Home;
     awayscore = awayscore + currentscore.Away;}if(
       homescore != awayscore){
-   return inningscore.push(`Final Score: Away ${currentscore.Away} - Home ${currentscore.Home}`)}else{return inningscore.push(`This game will require extra innings: Away ${currentscore.Away} - Home ${currentscore.Home}`)}
+   return inningscore.push(`Final Score: Away ${currentscore.Away} - Home ${currentscore.Home}`)}else if(homescore=== awayscore){return inningscore.push(`This game will require extra innings: Away ${currentscore.Away} - Home ${currentscore.Home}`)}
   }
-  }
-}
+
+
 
 
 
